@@ -1,0 +1,444 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  /* width: fit-content; */
+}
+.bg{
+  background: url('images/cricket-stadium-vector.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 100vh; */
+}  
+
+nav{
+  overflow: hidden;
+background-color: #333;
+position: fixed;
+top: 0;
+width: 100%;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  /* line-height: 80px; */
+  /* margin: 0 5px; */
+}
+nav ul li a{
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 7px 13px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #ffa41b;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+
+/* =====logo============= */
+.bg label.logo{
+  text-align: center;
+}
+label{
+  width: 100%;
+}
+label.logo{
+  color: rgb(55, 44, 218);
+  /* font-size: 70px; */
+  font: normal 80px 'Cookie';
+  font-weight: 900;
+  /* padding: 0 535px; */
+  font-weight: bold;
+  position: fixed;
+  top: 50px;
+}
+label.logo span{
+  color: rgb(235, 16, 16);
+}
+
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+
+
+/* Slideshow container */
+.slideshow{
+height: 100vh;
+}
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+.slideshow-container img{
+  border-radius: 15px;
+}
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.text {font-size: 11px}
+}
+
+
+
+
+
+/* ======flip box================ */
+.flip-box {
+background-color: transparent;
+width: 800px;
+height: 500px;
+border: 1px solid #f1f1f1;
+perspective: 1000px;
+}
+
+.flip-box-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.flip-box-front {
+background-color: #bbb;
+color: black;
+}
+
+.flip-box-back {
+background-color: #555;
+color: white;
+transform: rotateY(180deg);
+}
+
+
+
+
+
+
+/* ====players============ */
+.batsmans, .bowlers{
+height: 100vh;
+}
+.batsmans h1, .bowlers h1{
+text-align: center;
+font-size: 40px;
+}
+.batsmans p, .bowlers p{
+text-align: center;
+display: inline;
+}
+.batsmans img, .bowlers img{
+height: 300px;
+width: 300px;
+padding: 20px;
+margin-left: 60px;
+border-radius: 50%;
+}
+.batsmans figcaption, .bowlers figcaption{
+display: block;
+color: white;
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+width: 300px;
+padding: 2px;
+margin-left: 60px;
+}
+
+.batsmans .item, .bowlers .item{
+width: 300px;
+text-align:center;
+display: flex;
+background-color: transparent;
+border: 1px solid transparent;
+margin-right: 60px;
+margin-bottom: 1px;
+float:left;
+}
+.aligncenter{
+text-align: center;
+display: block;
+
+}
+
+
+
+
+
+
+/*===== The footer is fixed to the bottom of the page =====*/
+
+footer{
+position: fixed;
+bottom: 0;
+}
+
+@media (max-height: 800px){
+footer { position: static; }
+header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+background-color: #2c292f;
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 50px 50px 60px 50px;
+margin-top: 0px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: inline-block;
+vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+width: 30%;
+}
+
+.footer-distributed h3{
+color: blue;
+font: normal 70px 'Cookie';
+margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+width: 30%;
+}
+
+.footer-distributed h3 span{
+color: red;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+color:  #ffffff;
+margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+color:  #8f9296;
+font-size: 14px;
+font-weight: normal;
+margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+background-color:  #33383b;
+color: #ffffff;
+font-size: 25px;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+text-align: center;
+line-height: 42px;
+margin: 10px 15px;
+vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+font-size: 17px;
+line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+display: inline-block;
+color: #ffffff;
+vertical-align: middle;
+margin:0;
+}
+
+.footer-distributed .footer-center p span{
+display:block;
+font-weight: normal;
+font-size:14px;
+line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+color:  #e0ac1c;
+text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+line-height: 20px;
+color:  #92999f;
+font-size: 13px;
+font-weight: normal;
+margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+display: block;
+color:  #ffffff;
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color:  #33383b;
+border-radius: 2px;
+
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.footer-distributed .footer-center i{
+  margin-left: 0;
+}
+
+}
