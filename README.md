@@ -1,1 +1,1 @@
-# Cric-Heroes
+# CricHeroes
